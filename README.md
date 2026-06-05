@@ -27,4 +27,6 @@ Each folder has its own README with full setup and usage instructions:
 
 ## About
 
+**AAron** is the primary product: the simulator that runs the experiments and produces the data. **AAreplay** is an auxiliary tool that simply helps visualise those runs; it is useful, but secondary.
+
 These tools are the software companion to *Topologies & Randomness in Gossip Networks* (Matteo Cannata, Maastricht University, Department of Advanced Computing Sciences, 2026).
