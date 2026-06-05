@@ -267,6 +267,12 @@ npm run lint         # eslint
 
 ---
 
+## Acknowledgments
+
+[Claude Opus 4.5](https://www.anthropic.com/claude) (Anthropic, 2025) was used for some code completion during development.
+
+---
+
 ## License
 
 MIT. See [`LICENSE`](LICENSE).
