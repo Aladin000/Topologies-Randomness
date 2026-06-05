@@ -10,7 +10,7 @@ AAron is a configurable, deterministic gossip simulator. You choose a network to
 
 The repository has three parts: the **simulator** engine; a **command-line interface** (`./aaron`), usable interactively or scripted, that runs single trials, custom parameter sweeps, and the thesis experiment grids; and a set of **Python analysis scripts** that turn the raw CSV output into figures and markdown reports.
 
-AAron is also the software companion to the bachelor thesis *Topologies & Randomness in Gossip Networks* (Matteo Cannata, Maastricht University, Department of Advanced Computing Sciences, 2026), which uses it to study how much of a gossip protocol's behaviour comes from the network it runs on versus how nodes choose who to talk to. That study and how to reproduce it live in [Experiments](#experiments).
+AAron is also the software companion to *Topologies & Randomness in Gossip Networks* (Matteo Cannata, Maastricht University, Department of Advanced Computing Sciences, 2026), which uses it to study how much of a gossip protocol's behaviour comes from the network it runs on versus how nodes choose who to talk to. That study and how to reproduce it live in [Experiments](#experiments). To replay a finished run visually, load its `result.json` into [**AAreplay**](../AAreplay-DACS), the companion viewer in the same repository.
 
 ---
 
@@ -85,8 +85,8 @@ Anywhere this README uses `./mvnw`, you can substitute `mvn` once Maven is insta
 ### 2. Build and launch
 
 ```bash
-git clone https://github.com/Aladin000/AAron.git
-cd AAron
+git clone https://github.com/Aladin000/Topologies-Randomness.git
+cd Topologies-Randomness/AAron-DACS
 ./aaron            # macOS / Linux   (use  aaron  on Windows)
 ```
 
@@ -236,7 +236,7 @@ Each network type has a minimum size (`2k + 1` for ring, random, and small-world
 
 ### Visualising a run
 
-The four panels below each show one generated network and a full gossip run on it. These graphs and simulated runs were generated with **AAron** and then replayed and visualised with **AAreplay**, a companion tool for replaying AAron simulations.
+The four panels below each show one generated network and a full gossip run on it. These graphs and simulated runs were generated with **AAron** and then replayed and visualised with [**AAreplay**](../AAreplay-DACS), the companion viewer in the same repository.
 
 <table>
   <tr>

@@ -14,7 +14,7 @@ A deterministic replay viewer for gossip-epidemic event logs.
 
 AAreplay reads one recorded gossip simulation and reconstructs how a message spread through the network, round by round. It is a browser app: you load a single event-log file, watch the spread animate inside a square frame, and step, scrub, zoom, and inspect any moment of the run. It does not simulate anything itself. It is a faithful viewer for runs produced elsewhere.
 
-AAreplay is the companion viewer to [**AAron**](https://github.com/Aladin000/AAron), the gossip simulator built for the bachelor thesis *Topologies & Randomness in Gossip Networks* (Matteo Cannata, Maastricht University, Department of Advanced Computing Sciences, 2026). AAron runs simulations and writes event logs; AAreplay plays them back.
+AAreplay is the companion viewer to [**AAron**](../AAron-DACS), the gossip simulator built for *Topologies & Randomness in Gossip Networks* (Matteo Cannata, Maastricht University, Department of Advanced Computing Sciences, 2026). Both tools live in the same repository: AAron in [`AAron-DACS/`](../AAron-DACS), AAreplay in `AAreplay-DACS/` (this folder). AAron runs simulations and writes event logs; AAreplay plays them back.
 
 > **AAron simulates and writes `result.json`. AAreplay plays it back.**
 > AAreplay never runs a simulation of its own. It only visualizes what the file already records, which is exactly what keeps the picture an honest reflection of the run.
@@ -65,8 +65,8 @@ AAreplay is a pure front-end app with two runtime dependencies (React and Zod) p
 ### 2. Install and launch
 
 ```bash
-git clone https://github.com/Aladin000/AAreplay.git
-cd AAreplay/app
+git clone https://github.com/Aladin000/Topologies-Randomness.git
+cd Topologies-Randomness/AAreplay-DACS/app
 npm install
 npm run dev
 ```
@@ -87,7 +87,7 @@ Open the URL Vite prints (default **http://localhost:5173**). A ready-to-use sam
 
 ### 4. Where to go next
 
-- Produce your own replay files → run [AAron](https://github.com/Aladin000/AAron) and load its `result.json` output here.
+- Produce your own replay files → run [AAron](../AAron-DACS) and load its `result.json` output here.
 - Understand the file AAreplay expects → [Replay files](#replay-files).
 - Change how runs are drawn or add a control → [Extending AAreplay](#extending-aareplay).
 
