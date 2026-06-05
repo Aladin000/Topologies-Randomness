@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+JAR="$SCRIPT_DIR/target/aaron-1.0.0.jar"
+
+if [ ! -f "$JAR" ]; then
+    echo "  ●  building aaron (first run)..." >&2
+    ( cd "$SCRIPT_DIR" && ./mvnw -q clean package -DskipTests )
+fi
+
+exec java -jar "$JAR" "$@"

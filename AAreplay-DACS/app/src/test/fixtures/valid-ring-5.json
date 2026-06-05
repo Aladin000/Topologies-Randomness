@@ -1,0 +1,63 @@
+{
+  "formatVersion": "1.0",
+  "configuration": {
+    "topologyType": "ring",
+    "nodeCount": 5,
+    "viewFraction": 0.4,
+    "fanOut": 1,
+    "graphSeed": 42,
+    "simulationSeed": 7,
+    "k": 2,
+    "m": 1,
+    "p": 0.0,
+    "beta": 0.0,
+    "maxRounds": 20,
+    "stableRounds": 3
+  },
+  "network": {
+    "edges": [[0, 1], [1, 2], [2, 3], [3, 4], [4, 0]]
+  },
+  "sourceNode": 0,
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {"sender": 0, "receiver": 1, "newInfection": true}
+      ],
+      "newlyInformed": [1],
+      "totalInformed": 2,
+      "messageCount": 1
+    },
+    {
+      "round": 2,
+      "messages": [
+        {"sender": 0, "receiver": 4, "newInfection": true},
+        {"sender": 1, "receiver": 2, "newInfection": true}
+      ],
+      "newlyInformed": [2, 4],
+      "totalInformed": 4,
+      "messageCount": 2
+    },
+    {
+      "round": 3,
+      "messages": [
+        {"sender": 2, "receiver": 3, "newInfection": true},
+        {"sender": 4, "receiver": 3, "newInfection": false}
+      ],
+      "newlyInformed": [3],
+      "totalInformed": 5,
+      "messageCount": 2
+    }
+  ],
+  "result": {
+    "T_end": 3,
+    "Omega": 1.0,
+    "M": 5,
+    "alpha": 1.0,
+    "L_0.5": 2,
+    "L_0.9": 3,
+    "L_1.0": 3,
+    "F_eff": 1.0,
+    "R_run": 3
+  }
+}

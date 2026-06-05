@@ -1,0 +1,1349 @@
+{
+  "configuration": {
+    "topologyType": "Random",
+    "nodeCount": 30,
+    "viewFraction": 0.7,
+    "fanOut": 2,
+    "graphSeed": 567,
+    "simulationSeed": 3,
+    "k": 3,
+    "m": 3,
+    "p": 0.20689655172413793,
+    "beta": 0.0,
+    "maxRounds": 1000,
+    "stableRounds": 3
+  },
+  "network": {
+    "edges": [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        23
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        29
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        25
+      ],
+      [
+        2,
+        29
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        23
+      ],
+      [
+        3,
+        26
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        22
+      ],
+      [
+        4,
+        25
+      ],
+      [
+        4,
+        27
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        15
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        17
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        7,
+        20
+      ],
+      [
+        7,
+        25
+      ],
+      [
+        7,
+        26
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        9,
+        17
+      ],
+      [
+        9,
+        21
+      ],
+      [
+        9,
+        22
+      ],
+      [
+        9,
+        27
+      ],
+      [
+        9,
+        29
+      ],
+      [
+        10,
+        22
+      ],
+      [
+        10,
+        23
+      ],
+      [
+        10,
+        29
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        11,
+        15
+      ],
+      [
+        11,
+        22
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        11,
+        28
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        12,
+        18
+      ],
+      [
+        12,
+        19
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        16
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        13,
+        27
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        14,
+        23
+      ],
+      [
+        14,
+        26
+      ],
+      [
+        14,
+        27
+      ],
+      [
+        15,
+        18
+      ],
+      [
+        15,
+        19
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        15,
+        22
+      ],
+      [
+        15,
+        25
+      ],
+      [
+        15,
+        27
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        16,
+        24
+      ],
+      [
+        16,
+        25
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        18,
+        26
+      ],
+      [
+        19,
+        22
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        21,
+        28
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        23,
+        26
+      ],
+      [
+        23,
+        27
+      ],
+      [
+        23,
+        29
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        24,
+        27
+      ],
+      [
+        27,
+        29
+      ]
+    ]
+  },
+  "sourceNode": 14,
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "sender": 14,
+          "receiver": 23,
+          "newInfection": true
+        },
+        {
+          "sender": 14,
+          "receiver": 16,
+          "newInfection": true
+        }
+      ],
+      "newlyInformed": [
+        16,
+        23
+      ],
+      "totalInformed": 3,
+      "messageCount": 2
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "sender": 14,
+          "receiver": 23,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 27,
+          "newInfection": true
+        },
+        {
+          "sender": 16,
+          "receiver": 19,
+          "newInfection": true
+        },
+        {
+          "sender": 16,
+          "receiver": 13,
+          "newInfection": true
+        },
+        {
+          "sender": 23,
+          "receiver": 3,
+          "newInfection": true
+        },
+        {
+          "sender": 23,
+          "receiver": 29,
+          "newInfection": true
+        }
+      ],
+      "newlyInformed": [
+        3,
+        13,
+        19,
+        27,
+        29
+      ],
+      "totalInformed": 8,
+      "messageCount": 6
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "sender": 3,
+          "receiver": 26,
+          "newInfection": true
+        },
+        {
+          "sender": 3,
+          "receiver": 8,
+          "newInfection": true
+        },
+        {
+          "sender": 13,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 6,
+          "newInfection": true
+        },
+        {
+          "sender": 14,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 5,
+          "newInfection": true
+        },
+        {
+          "sender": 16,
+          "receiver": 24,
+          "newInfection": true
+        },
+        {
+          "sender": 16,
+          "receiver": 12,
+          "newInfection": true
+        },
+        {
+          "sender": 19,
+          "receiver": 15,
+          "newInfection": true
+        },
+        {
+          "sender": 19,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 23,
+          "receiver": 22,
+          "newInfection": true
+        },
+        {
+          "sender": 23,
+          "receiver": 14,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 24,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 14,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 9,
+          "newInfection": true
+        },
+        {
+          "sender": 29,
+          "receiver": 1,
+          "newInfection": true
+        }
+      ],
+      "newlyInformed": [
+        1,
+        5,
+        6,
+        8,
+        9,
+        12,
+        15,
+        22,
+        24,
+        26
+      ],
+      "totalInformed": 18,
+      "messageCount": 16
+    },
+    {
+      "round": 4,
+      "messages": [
+        {
+          "sender": 1,
+          "receiver": 29,
+          "newInfection": false
+        },
+        {
+          "sender": 1,
+          "receiver": 18,
+          "newInfection": true
+        },
+        {
+          "sender": 3,
+          "receiver": 15,
+          "newInfection": false
+        },
+        {
+          "sender": 3,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 5,
+          "receiver": 6,
+          "newInfection": false
+        },
+        {
+          "sender": 5,
+          "receiver": 20,
+          "newInfection": true
+        },
+        {
+          "sender": 6,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 6,
+          "receiver": 13,
+          "newInfection": false
+        },
+        {
+          "sender": 8,
+          "receiver": 3,
+          "newInfection": false
+        },
+        {
+          "sender": 8,
+          "receiver": 0,
+          "newInfection": true
+        },
+        {
+          "sender": 9,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 9,
+          "receiver": 21,
+          "newInfection": true
+        },
+        {
+          "sender": 12,
+          "receiver": 20,
+          "newInfection": false
+        },
+        {
+          "sender": 12,
+          "receiver": 18,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 21,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 15,
+          "receiver": 22,
+          "newInfection": false
+        },
+        {
+          "sender": 15,
+          "receiver": 20,
+          "newInfection": false
+        },
+        {
+          "sender": 16,
+          "receiver": 19,
+          "newInfection": false
+        },
+        {
+          "sender": 16,
+          "receiver": 2,
+          "newInfection": true
+        },
+        {
+          "sender": 19,
+          "receiver": 22,
+          "newInfection": false
+        },
+        {
+          "sender": 19,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 22,
+          "receiver": 1,
+          "newInfection": false
+        },
+        {
+          "sender": 22,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 23,
+          "receiver": 3,
+          "newInfection": false
+        },
+        {
+          "sender": 23,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 24,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 24,
+          "receiver": 25,
+          "newInfection": true
+        },
+        {
+          "sender": 26,
+          "receiver": 7,
+          "newInfection": true
+        },
+        {
+          "sender": 26,
+          "receiver": 23,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 23,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 14,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 7,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 23,
+          "newInfection": false
+        }
+      ],
+      "newlyInformed": [
+        0,
+        2,
+        7,
+        18,
+        20,
+        21,
+        25
+      ],
+      "totalInformed": 25,
+      "messageCount": 36
+    },
+    {
+      "round": 5,
+      "messages": [
+        {
+          "sender": 0,
+          "receiver": 17,
+          "newInfection": true
+        },
+        {
+          "sender": 0,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 1,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 1,
+          "receiver": 7,
+          "newInfection": false
+        },
+        {
+          "sender": 2,
+          "receiver": 20,
+          "newInfection": false
+        },
+        {
+          "sender": 2,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 3,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 3,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 5,
+          "receiver": 0,
+          "newInfection": false
+        },
+        {
+          "sender": 5,
+          "receiver": 3,
+          "newInfection": false
+        },
+        {
+          "sender": 6,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 6,
+          "receiver": 10,
+          "newInfection": true
+        },
+        {
+          "sender": 7,
+          "receiver": 17,
+          "newInfection": false
+        },
+        {
+          "sender": 7,
+          "receiver": 20,
+          "newInfection": false
+        },
+        {
+          "sender": 8,
+          "receiver": 3,
+          "newInfection": false
+        },
+        {
+          "sender": 8,
+          "receiver": 0,
+          "newInfection": false
+        },
+        {
+          "sender": 9,
+          "receiver": 4,
+          "newInfection": true
+        },
+        {
+          "sender": 9,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 12,
+          "receiver": 20,
+          "newInfection": false
+        },
+        {
+          "sender": 12,
+          "receiver": 19,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 6,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 15,
+          "receiver": 18,
+          "newInfection": false
+        },
+        {
+          "sender": 15,
+          "receiver": 4,
+          "newInfection": false
+        },
+        {
+          "sender": 16,
+          "receiver": 23,
+          "newInfection": false
+        },
+        {
+          "sender": 16,
+          "receiver": 14,
+          "newInfection": false
+        },
+        {
+          "sender": 18,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 18,
+          "receiver": 19,
+          "newInfection": false
+        },
+        {
+          "sender": 19,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 19,
+          "receiver": 18,
+          "newInfection": false
+        },
+        {
+          "sender": 20,
+          "receiver": 8,
+          "newInfection": false
+        },
+        {
+          "sender": 20,
+          "receiver": 2,
+          "newInfection": false
+        },
+        {
+          "sender": 21,
+          "receiver": 9,
+          "newInfection": false
+        },
+        {
+          "sender": 21,
+          "receiver": 13,
+          "newInfection": false
+        },
+        {
+          "sender": 22,
+          "receiver": 4,
+          "newInfection": false
+        },
+        {
+          "sender": 22,
+          "receiver": 11,
+          "newInfection": true
+        },
+        {
+          "sender": 23,
+          "receiver": 29,
+          "newInfection": false
+        },
+        {
+          "sender": 23,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 24,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 24,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 25,
+          "receiver": 24,
+          "newInfection": false
+        },
+        {
+          "sender": 25,
+          "receiver": 19,
+          "newInfection": false
+        },
+        {
+          "sender": 26,
+          "receiver": 3,
+          "newInfection": false
+        },
+        {
+          "sender": 26,
+          "receiver": 14,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 4,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 14,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 23,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 10,
+          "newInfection": false
+        }
+      ],
+      "newlyInformed": [
+        4,
+        10,
+        11,
+        17
+      ],
+      "totalInformed": 29,
+      "messageCount": 50
+    },
+    {
+      "round": 6,
+      "messages": [
+        {
+          "sender": 0,
+          "receiver": 8,
+          "newInfection": false
+        },
+        {
+          "sender": 0,
+          "receiver": 17,
+          "newInfection": false
+        },
+        {
+          "sender": 1,
+          "receiver": 25,
+          "newInfection": false
+        },
+        {
+          "sender": 1,
+          "receiver": 29,
+          "newInfection": false
+        },
+        {
+          "sender": 2,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 2,
+          "receiver": 25,
+          "newInfection": false
+        },
+        {
+          "sender": 3,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 3,
+          "receiver": 8,
+          "newInfection": false
+        },
+        {
+          "sender": 4,
+          "receiver": 28,
+          "newInfection": true
+        },
+        {
+          "sender": 4,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 5,
+          "receiver": 6,
+          "newInfection": false
+        },
+        {
+          "sender": 5,
+          "receiver": 0,
+          "newInfection": false
+        },
+        {
+          "sender": 6,
+          "receiver": 13,
+          "newInfection": false
+        },
+        {
+          "sender": 6,
+          "receiver": 22,
+          "newInfection": false
+        },
+        {
+          "sender": 7,
+          "receiver": 25,
+          "newInfection": false
+        },
+        {
+          "sender": 7,
+          "receiver": 18,
+          "newInfection": false
+        },
+        {
+          "sender": 8,
+          "receiver": 20,
+          "newInfection": false
+        },
+        {
+          "sender": 8,
+          "receiver": 3,
+          "newInfection": false
+        },
+        {
+          "sender": 9,
+          "receiver": 27,
+          "newInfection": false
+        },
+        {
+          "sender": 9,
+          "receiver": 4,
+          "newInfection": false
+        },
+        {
+          "sender": 10,
+          "receiver": 22,
+          "newInfection": false
+        },
+        {
+          "sender": 10,
+          "receiver": 6,
+          "newInfection": false
+        },
+        {
+          "sender": 11,
+          "receiver": 22,
+          "newInfection": false
+        },
+        {
+          "sender": 11,
+          "receiver": 15,
+          "newInfection": false
+        },
+        {
+          "sender": 12,
+          "receiver": 18,
+          "newInfection": false
+        },
+        {
+          "sender": 12,
+          "receiver": 7,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 13,
+          "receiver": 6,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 14,
+          "receiver": 11,
+          "newInfection": false
+        },
+        {
+          "sender": 15,
+          "receiver": 6,
+          "newInfection": false
+        },
+        {
+          "sender": 15,
+          "receiver": 19,
+          "newInfection": false
+        },
+        {
+          "sender": 16,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 16,
+          "receiver": 17,
+          "newInfection": false
+        },
+        {
+          "sender": 17,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 17,
+          "receiver": 0,
+          "newInfection": false
+        },
+        {
+          "sender": 18,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 18,
+          "receiver": 19,
+          "newInfection": false
+        },
+        {
+          "sender": 19,
+          "receiver": 22,
+          "newInfection": false
+        },
+        {
+          "sender": 19,
+          "receiver": 25,
+          "newInfection": false
+        },
+        {
+          "sender": 20,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 20,
+          "receiver": 5,
+          "newInfection": false
+        },
+        {
+          "sender": 21,
+          "receiver": 13,
+          "newInfection": false
+        },
+        {
+          "sender": 21,
+          "receiver": 28,
+          "newInfection": false
+        },
+        {
+          "sender": 22,
+          "receiver": 12,
+          "newInfection": false
+        },
+        {
+          "sender": 22,
+          "receiver": 9,
+          "newInfection": false
+        },
+        {
+          "sender": 23,
+          "receiver": 26,
+          "newInfection": false
+        },
+        {
+          "sender": 23,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 24,
+          "receiver": 16,
+          "newInfection": false
+        },
+        {
+          "sender": 24,
+          "receiver": 25,
+          "newInfection": false
+        },
+        {
+          "sender": 25,
+          "receiver": 1,
+          "newInfection": false
+        },
+        {
+          "sender": 25,
+          "receiver": 2,
+          "newInfection": false
+        },
+        {
+          "sender": 26,
+          "receiver": 18,
+          "newInfection": false
+        },
+        {
+          "sender": 26,
+          "receiver": 7,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 13,
+          "newInfection": false
+        },
+        {
+          "sender": 27,
+          "receiver": 4,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 2,
+          "newInfection": false
+        },
+        {
+          "sender": 29,
+          "receiver": 27,
+          "newInfection": false
+        }
+      ],
+      "newlyInformed": [
+        28
+      ],
+      "totalInformed": 30,
+      "messageCount": 58
+    }
+  ],
+  "result": {
+    "T_end": 6,
+    "Omega": 168,
+    "M": 5.793103448275862,
+    "alpha": 1.0,
+    "L_0.5": 3,
+    "L_0.9": 5,
+    "L_1.0": 6,
+    "F_eff": 5.6,
+    "R_run": 1
+  }
+}

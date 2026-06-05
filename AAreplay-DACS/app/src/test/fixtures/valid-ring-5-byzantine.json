@@ -1,0 +1,57 @@
+{
+  "formatVersion": "1.0",
+  "configuration": {
+    "topologyType": "ring",
+    "nodeCount": 5,
+    "viewFraction": 0.4,
+    "fanOut": 1,
+    "graphSeed": 42,
+    "simulationSeed": 7,
+    "k": 2,
+    "maxRounds": 20,
+    "stableRounds": 3,
+    "failureProbability": 0.2
+  },
+  "network": {
+    "edges": [[0, 1], [1, 2], [2, 3], [3, 4], [4, 0]]
+  },
+  "sourceNode": 0,
+  "failureProbability": 0.2,
+  "sourceForcedActive": false,
+  "failedNodes": [2],
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {"sender": 0, "receiver": 1, "newInfection": true}
+      ],
+      "newlyInformed": [1],
+      "totalInformed": 2,
+      "messageCount": 1
+    },
+    {
+      "round": 2,
+      "messages": [
+        {"sender": 0, "receiver": 4, "newInfection": true},
+        {"sender": 1, "receiver": 2, "newInfection": true}
+      ],
+      "newlyInformed": [2, 4],
+      "totalInformed": 4,
+      "messageCount": 2
+    },
+    {
+      "round": 3,
+      "messages": [
+        {"sender": 4, "receiver": 3, "newInfection": true}
+      ],
+      "newlyInformed": [3],
+      "totalInformed": 5,
+      "messageCount": 1
+    }
+  ],
+  "result": {
+    "T_end": 3,
+    "alpha": 1.0,
+    "R_run": 1
+  }
+}
